@@ -1,0 +1,20 @@
+{
+   "name": "imagesminify",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "webp": "run-s jpgtowebp pngtowebp",
+      "jpgtowebp": "npx @squoosh/cli --webp '{quality: 85}' -d ./min/webp ./images/*.jpg",
+      "pngtowebp": "npx @squoosh/cli --webp '{quality: 85}' -d ./min/webp ./images/*.png",
+      "jpg": "npx @squoosh/cli --mozjpeg '{quality: 85}' -d ./min/jpg ./images/*.jpg",
+      "png": "npx @squoosh/cli --oxipng '{quality: 85}' -d ./min/png ./images/*.png"
+   },
+   "author": "",
+   "license": "ISC",
+   "dependencies": {
+      "@squoosh/cli": "^0.7.3",
+      "npm-run-all": "^4.1.5"
+   }
+}
