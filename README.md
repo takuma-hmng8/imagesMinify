@@ -1,12 +1,12 @@
-# webp に変換
+## webp に変換
 
 npm run webp
 
-# jpg 圧縮
+## jpg 圧縮
 
 npm run jpg
 
-# png 圧縮
+## png 圧縮
 
 npm run png
 
